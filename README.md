@@ -10,17 +10,6 @@
 https://raw.githubusercontent.com/fox37x/qx-rules/main/QuantumultX/qx-minimal.conf
 ```
 
-旧地址兼容：
-
-```text
-https://raw.githubusercontent.com/fox37x/qx-rules/main/QuantumultX/qx-china.conf
-```
-
-只要远程规则：
-
-```text
-https://raw.githubusercontent.com/fox37x/qx-rules/main/QuantumultX/filter_remote.conf
-```
 
 ## 设计
 
