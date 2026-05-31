@@ -1,0 +1,28 @@
+name: Sync upstream rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 3 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync selected Quantumult X rules
+        run: python3 scripts/sync_rules.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rules/QuantumultX
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: sync upstream rules"
+            git push
+          fi
