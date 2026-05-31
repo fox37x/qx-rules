@@ -4,10 +4,10 @@
 
 ## 直接使用地址
 
-完整配置片段（推荐，单节点版）：
+完整配置片段（推荐，精简完整单节点版）：
 
 ```text
-https://raw.githubusercontent.com/fox37x/qx-rules/main/QuantumultX/qx-single.conf
+https://raw.githubusercontent.com/fox37x/qx-rules/main/QuantumultX/qx-minimal.conf
 ```
 
 旧地址兼容：
